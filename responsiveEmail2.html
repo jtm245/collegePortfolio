@@ -1,0 +1,655 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Market Newsletter</title>
+</head>
+
+<body>
+    <style type="text/css">
+.blue {
+        background-color: #99cccc;
+    }
+    
+    .darkBlue {
+        background-color: #003466;
+    }
+}
+.white {
+    background-color: #ffffff;
+}
+.sage {
+    background-color: #557665;
+}
+.gold {
+    background-color: #E0A82F;
+}
+.cream h2 {
+    color: #557665;
+}
+h2.darkBlue {
+    color: #003466;
+    background: none;
+}
+h2.sage {
+    color: #557665;
+    background: none;
+}
+h2.white {
+    color: #ffffff;
+    background: none;
+}
+.blue p,
+.burgundy p,
+{
+    color: #3e3e3e;
+    font-weight: bold;
+}
+
+/* @end */
+
+/* ------------------------------------- 
+		GLOBAL 
+------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+img {
+    max-width: 100%;
+}
+.collapse {
+    margin: 0;
+    padding: 0;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    width: 100%!important;
+    height: 100%;
+}
+
+/* ------------------------------------- 
+		ELEMENTS 
+------------------------------------- */
+a {
+    color: #2BA6CB;
+}
+.btn {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #666;
+    padding: 10px 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+p.callout {
+    padding: 15px;
+    background-color: #ECF8FF;
+    margin-bottom: 15px;
+}
+.callout a {
+    font-weight: bold;
+    color: #2BA6CB;
+}
+table.social {
+    /* 	padding:15px; */
+    
+    background-color: #ebebeb;
+}
+.social .soc-btn {
+    padding: 3px 7px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+a.fb {
+    background-color: #3B5998!important;
+}
+a.tw {
+    background-color: #1daced!important;
+}
+a.gp {
+    background-color: #DB4A39!important;
+}
+a.ms {
+    background-color: #000!important;
+}
+.sidebar .soc-btn {
+    display: block;
+    width: 100%;
+}
+
+/* ------------------------------------- 
+		HEADER 
+------------------------------------- */
+table.head-wrap {
+    width: 100%;
+}
+.header.container table td.logo {
+    padding: 10px;
+}
+.header.container table td.label {
+    padding: 10px;
+    padding-left: 0px;
+}
+
+/* ------------------------------------- 
+		BODY 
+------------------------------------- */
+table.body-wrap {
+    width: 100%;
+    padding-left: -5;
+    margin-left: -10;
+}
+
+/* ------------------------------------- 
+		FOOTER 
+------------------------------------- */
+table.footer-wrap {
+    width: 100%;
+    clear: both!important;
+}
+.footer-wrap .container td.content p {
+    border-top: 1px solid rgb(215, 215, 215);
+    padding-top: 15px;
+}
+.footer-wrap .container td.content p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* ------------------------------------- 
+		TYPOGRAPHY 
+------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: #000;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    font-size: 60%;
+    color: #6f6f6f;
+    line-height: 0;
+    text-transform: none;
+}
+h1 {
+    font-weight: 200;
+    font-size: 44px;
+}
+h2 {
+    font-weight: 200;
+    font-size: 37px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 27px;
+}
+h4 {
+    font-weight: 500;
+    font-size: 23px;
+}
+h5 {
+    font-weight: 900;
+    font-size: 17px;
+}
+h6 {
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #444;
+}
+.collapse {
+    margin: 0!important;
+}
+p,
+ul {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.6;
+}
+p.lead {
+    font-size: 17px;
+}
+p.last {
+    margin-bottom: 0px;
+}
+ul li {
+    margin-left: 5px;
+    list-style-position: inside;
+}
+
+/* ------------------------------------- 
+		SIDEBAR 
+------------------------------------- */
+ul.sidebar {
+    background: #ebebeb;
+    display: block;
+    list-style-type: none;
+}
+ul.sidebar li {
+    display: block;
+    margin: 0;
+}
+ul.sidebar li a {
+    text-decoration: none;
+    color: #666;
+    padding: 10px 16px;
+    /* 	font-weight:bold; */
+    
+    margin-right: 10px;
+    /* 	text-align:center; */
+    
+    cursor: pointer;
+    border-bottom: 1px solid #777777;
+    border-top: 1px solid #FFFFFF;
+    display: block;
+    margin: 0;
+}
+ul.sidebar li a.last {
+    border-bottom-width: 0px;
+}
+ul.sidebar li a h1,
+ul.sidebar li a h2,
+ul.sidebar li a h3,
+ul.sidebar li a h4,
+ul.sidebar li a h5,
+ul.sidebar li a h6,
+ul.sidebar li a p {
+    margin-bottom: 0!important;
+}
+
+/* ------------------------
+		RESPONSIVENESS
+--------------------------- */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+    display: block!important;
+    max-width: 650px!important;
+    margin: 0 auto!important;
+    /* makes it centered */
+    
+    clear: both!important;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table {
+    width: 100%;
+}
+
+/* Odds and ends */
+.column {
+    width: 400px;
+    float: left;
+}
+.column tr td {
+    padding: 10px;
+}
+.column-wrap {
+    padding: 0!important;
+    margin: 0 auto;
+    max-width: 650px!important;
+}
+.column table {
+    width: 100%;
+}
+.social .column {
+    width: 280px;
+    min-width: 279px;
+    float: left;
+}
+
+/* Be sure to place a .clear element after each set of columns, just to be safe */
+.clear {
+    display: block;
+    clear: both;
+}
+
+/* ------------------------------------------- 
+		PHONE
+		For clients that support media queries.
+		Nothing fancy. 
+-------------------------------------------- */
+@media only screen and (max-width: 600px) {
+    a[class="btn"] {
+        display: block!important;
+        margin-bottom: 10px!important;
+        background-image: none!important;
+        margin-right: 0!important;
+    }
+    
+    div[class="column"] {
+        width: auto!important;
+        float: none!important;
+    }
+    
+    table.social div[class="column"] {
+        width: auto!important;
+    }
+}
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #fff;
+    margin: 7px 0px 5px 5px !important;
+}
+h4 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin: 7px 0px 5px 5px !important;
+}
+
+/*New*/
+.container {
+    height: auto;
+    overflow: hidden;
+    width: 100vw;
+}
+
+/*Keeps img from becoming larger than viewing window */
+img {
+    max-width: 100%;
+}
+
+/*Image div classes for right and left columns at 2/3(right) and 1/3(left) sizes*/
+.rightImage {
+    width: 66.6%;
+    background: ;
+}
+.leftImage {
+    background: ;
+    width: 33.3%;
+    overflow: hidden;
+}
+​​ .ribbon {
+    font-size: 22px !important;
+    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+    
+    width: 50%;
+    height: 50%;
+    position: relative;
+    background: #3e3e3e;
+    color: #3e3e3e;
+    text-align: center;
+    padding: 0em 2em;
+    /* Adjust to suit */
+    
+    margin: 7px 0px 5px 10px !important;
+}
+.ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -.2em;
+    border: .8em solid #E0A82F;
+}
+.ribbon:after {
+    right: -1.5em;
+    border-left-width: 1em;
+    border-right-color: transparent;
+}
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #804f7c transparent transparent transparent;
+    bottom: 1em;
+}
+.ribbon .ribbon-content:after {
+    right: 0;
+}
+.non-semantic-protector {
+    position: relative;
+    z-index: ;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    zoom: 1;     /* triggers hasLayout */
+}
+
+/*Force table width to fit screen on mobile (768px is for tablet size screen and below)*/
+@media screen and (max-width:768px) {
+    table {
+        width: 100vw !important;
+    }
+    
+    img {
+        width: 100%!important;
+        height: auto;
+        padding-top: 0;
+
+    }
+    
+    .container {
+        width: 100vw;
+    }
+    .column{
+    	clear: left;
+    	width: 100%!important;
+    	vertical-align: middle;
+    }
+}
+    </style>
+    <table class="bodytbl" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="centerBody" align="center">
+                <table width="640" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="left" valign="bottom">
+                            <table width="640" cellspacing="0" cellpadding="0">
+                                <div>
+                                    <container>
+                                        <img id="customHeaderImage" src="newsletter-header.jpeg" editable="true" width="640">
+                                    </container>
+                                </div>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="640" cellspacing="0" cellpadding="0" class="">
+                    <td style="background-color:#003466" height="25" align="right" valign="middle">
+                        <div style="color: #FFF; text-align:right; font-size:14px; font-weight:bolder; margin-right: 20px">
+                            <singleline label="Issue">November 27, 2012</singleline>
+                        </div>
+                    </td>
+                </table>
+                <repeater>
+                    <layout label="Gold Heading">
+                        <table class="layout 7" width="640" cellpadding="0" cellspacing="0">
+                            <tr height="20">
+                            </tr>
+                            <tr width="640">
+                                <td width="640">
+                                     <table width="640" cellpadding="0" cellspacing="0">
+                                        <tr class="gold">
+                                            <td>
+                                                    <h3 class="">
+												<singleline>Headline goes here</singleline>
+										</h3>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <tr>
+                                        <td colspan="2">
+                                            <multiline>
+                                                <p>Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.</p>
+                                            </multiline>
+                                        </td>
+                                    </tr>
+                                </td>
+                                <td width="20">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </layout>
+                    <layout label="Blue Heading">
+                        <table class="layout 7" width="640" cellpadding="0" cellspacing="0">
+                            <tr height="20">
+                            </tr>
+                            <tr width="640">
+                                <td width="640">
+                                     <table width="640" cellpadding="0" cellspacing="0">
+                                        <tr class="darkBlue">
+                                            <td>
+                                                    <h3 class="">
+												<singleline>Headline goes here</singleline>
+										</h3>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <tr>
+                                        <td colspan="2">
+                                            <multiline>
+                                                <p>Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.</p>
+                                            </multiline>
+                                        </td>
+                                    </tr>
+                                </td>
+                                <td width="20">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </layout>
+                    <layout label="Sage Heading">
+                        <table class="layout 7" width="640" cellpadding="0" cellspacing="0">
+                            <tr height="20">
+                            </tr>
+                            <tr width="640">
+                                <td width="640">
+                                     <table width="640" cellpadding="0" cellspacing="0">
+                                        <tr class="sage">
+                                            <td>
+                                                    <h3 class="">
+												<singleline>Headline goes here</singleline>
+										</h3>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <tr>
+                                        <td colspan="2">
+                                            <multiline>
+                                                <p>Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.</p>
+                                            </multiline>
+                                        </td>
+                                    </tr>
+                                </td>
+                                <td width="20">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </layout>
+                    <layout label="2/3 Image Right">
+                         <table width="640" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td></td>
+                                <td class="container" bgcolor="#FFFFFF">
+                                    <div class="column-wrap" width="250" style="margin-left: -10px;">
+                                        <div class="column" style="">
+                                            <table style="position: relative; float: left;">
+                                                <tr>
+                                                    <td>
+                                                        <h4>Headline</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="column" align="bottom" style="position: relative; float: left; width: 250px;">
+                                            <table>
+                                                <div>
+                                                    <img src="big.jpg" title="" width="250px" border="0" style="max-width:400px; position:relative; padding-top: 30px" editable="true" label="Image" style="border: none;" />
+                                                </div>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </tr>
+                                    </table>
+                    </layout>
+                    <layout label="2/3 Image Left">
+                         <table width="640" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="container" bgcolor="#FFFFFF">
+                                    <div class="column-wrap" width="250" style="margin-left: -10px;">   
+                                        <div class="column" align="bottom" style="position: relative; float: left; width: 250px;">
+                                            <table>
+                                                <div class="clearfix">
+                                                    <img src="med.jpg" vertical-align: middle; width="250px" border="0" style="max-width:400px; position:relative; padding-top: 30px" editable="true" label="Image" style="border: none;" />
+                                                </div>
+                                            </table>
+                                        </div>
+                                        <div class="column" style="">
+                                            <table style="position: relative; float: right; margin-left: 10px;">
+                                                <tr>
+                                                    <td>
+                                                        <h4>Headline</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                   </div>
+                                </tr>
+                                    </table>
+                    </layout>
+                    </repeater>
+                <table width="640" cellspacing="0" cellpadding="0">
+                    <tr height="20"></tr>
+                    <tr>
+                        <td class="small" align="left" valign="top">
+                            <div style="text-align:right; font-size:14px; font-weight:bolder; margin-right: 20px">
+                                <preferences>Edit your subscription</preferences>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                <unsubscribe>unsubscribe</unsubscribe>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                </td>
+                </tr>
+                </table>
+</body>
+
+</html>
+
